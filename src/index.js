@@ -1,12 +1,20 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {createRoot} from 'react-dom/client'
 import './index.css';
 import App from './App';
+import MainPage from './pages/MainPage';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// Create root element
+const rootElement = document.getElementById('root');
+const root = createRoot(rootElement);
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App/>}>
+        <Route index element={<MainPage />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
 );
-
