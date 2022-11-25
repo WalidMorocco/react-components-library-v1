@@ -37,23 +37,58 @@ nav > .nav-section {
     justify-content: center;
 }
 
-#nav-logo-section,
-#nav-social-section {
-    flex-basis: calc((100% / 4));
-    gap: 3rem;
+@media all and (orientation: landscape) {
+    #nav-logo-section,
+    #nav-social-section {
+        flex-basis: calc((100% / 4));
+        gap: 3rem;
+    }
+
+    #nav-link-section {
+        flex-basis: calc((100% / 2));
+        gap: 6rem;
+        font-size: 1.5rem;
+    }
+
+    #nav-logo-section {
+        justify-content: flex-start;
+        font-size: 2.5rem;
+    }
+
+    #nav-menu-section {
+        display: none;
+    }
+
+    #social-logo {
+        -webkit-filter: invert(1);
+        filter: invert(1);
+    }
 }
 
-#nav-link-section {
-    flex-basis: calc((100% / 2));
-    gap: 6rem;
+@media all and (orientation: portrait) {
+    #nav-logo-section,
+    #nav-menu-section {
+        flex-basis: calc((100% / 2));
+        gap: 3rem;
+    }
+
+    #nav-link-section,
+    #nav-social-section {
+        display: none;
+    }
+
+    #nav-logo-section {
+        justify-content: flex-start;
+    }
+
+    #nav-menu-section {
+        justify-content: flex-end;
+    }
+
+    #social-logo {
+        -webkit-filter: invert(1);
+        filter: invert(1);
+    }
 }
 
-#nav-logo-section {
-    justify-content: flex-start;
-    font-size: 2.5rem;
-}
 
-#social-logo {
-    -webkit-filter: invert(1);
-    filter: invert(1);
-}
