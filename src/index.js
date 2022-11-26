@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import {createRoot} from 'react-dom/client'
 import './index.css';
 import App from './App';
-import MainPage from './pages/MainPage';
+import HomePage from './pages/HomePage';
 
 // Create root element
 const rootElement = document.getElementById('root');
@@ -13,7 +13,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App/>}>
-        <Route index element={<MainPage />} />
+        <Route index element={<HomePage />} />
       </Route>
     </Routes>
   </BrowserRouter>
