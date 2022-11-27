@@ -1,27 +1,64 @@
-.home-container {
-    display: grid;
-    border-style: solid;
-    grid-template-columns: auto auto auto;
+body {
+    overflow: auto;
 }
 
-.overview-container {
+.wrapper {
     display: grid;
-    justify-items: center;
-    border-style: solid;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    /* padding: 3rem 2rem; */
+    grid-gap: 0.5rem;
+    grid-template-areas:
+    "header"
+    "sidebar"
+    "content"
+    "sidebar2"
 }
 
-.overview-text {
-    display: grid;
-    justify-items: center;
+@media only screen and (min-width: 500px)  {
+    .wrapper {
+        grid-template-columns: 20% auto;
+        grid-template-areas:
+        "header   header"
+        "sidebar  content"
+        "sidebar2 sidebar2"
+    }
 }
 
-.section-container {
-    /* display: grid;
-    justify-items: center;
-    border-style: solid; */
-    grid-column-start: 1;
-    grid-column-end: 2;
+@media only screen and (min-width: 600px)   {
+    .wrapper {
+    grid-gap: 0.5rem;
+    grid-template-columns: auto 75% auto;
+    grid-template-areas:
+    "header  header  header"
+    "sidebar content sidebar2"
+    }
 }
+
+.header {
+    grid-area: header;
+    text-align: center;
+}
+
+.content {
+    grid-area: content;
+
+}
+
+.sidebar {
+    grid-area: sidebar;
+    border: solid;
+}
+
+.sidebar2 {
+    grid-area: sidebar2;
+    border: solid;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+.card-container {
+    display: grid;
+    border: solid;
+}
+

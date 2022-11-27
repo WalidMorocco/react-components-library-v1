@@ -4,10 +4,13 @@ import { Card } from '../../components/Card/Card'
 export const ComponentSection = () => {
     
     return (
-        <div className='section-container'>
+        <div className='card-container'>
             <Card />
             <Card />
             <Card />
+            <Card />
+            <Card />
+
         </div>
     )
 }

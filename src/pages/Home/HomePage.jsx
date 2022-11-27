@@ -4,9 +4,15 @@ import { Overview } from "./Overview";
 export  const HomePage = () => {
     
     return (
-        <div className="home-container">
-            <Overview/>
-            <ComponentSection />
+        <div class="wrapper">
+            <div class="box header">
+                <Overview/>
+            </div>
+            <div class="box sidebar">Sidebar</div>
+            <div class="box sidebar2">Sidebar 2</div>
+            <div class="box content">
+                <ComponentSection/>
+            </div>
         </div>
     )
 }
