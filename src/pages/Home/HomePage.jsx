@@ -1,10 +1,12 @@
+import { ComponentSection } from "./ComponentSection";
 import { Overview } from "./Overview";
 
 export  const HomePage = () => {
     
     return (
-        <div className=''>
+        <div className="home-container">
             <Overview/>
+            <ComponentSection />
         </div>
     )
 }

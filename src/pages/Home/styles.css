@@ -1,0 +1,27 @@
+.home-container {
+    display: grid;
+    border-style: solid;
+    grid-template-columns: auto auto auto;
+}
+
+.overview-container {
+    display: grid;
+    justify-items: center;
+    border-style: solid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    /* padding: 3rem 2rem; */
+}
+
+.overview-text {
+    display: grid;
+    justify-items: center;
+}
+
+.section-container {
+    /* display: grid;
+    justify-items: center;
+    border-style: solid; */
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
