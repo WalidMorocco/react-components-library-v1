@@ -14,10 +14,10 @@ body {
 
 @media only screen and (min-width: 500px)  {
     .wrapper {
-        grid-template-columns: 20% auto;
+        grid-template-columns: auto 30%;
         grid-template-areas:
         "header   header"
-        "sidebar  content"
+        "content  sidebar"
         "sidebar2 sidebar2"
     }
 }
@@ -25,7 +25,7 @@ body {
 @media only screen and (min-width: 600px)   {
     .wrapper {
     grid-gap: 0.5rem;
-    grid-template-columns: auto 75% auto;
+    grid-template-columns: 15% 55% auto;
     grid-template-areas:
     "header  header  header"
     "sidebar content sidebar2"
@@ -39,7 +39,6 @@ body {
 
 .content {
     grid-area: content;
-
 }
 
 .sidebar {
@@ -59,6 +58,6 @@ body {
 
 .card-container {
     display: grid;
-    border: solid;
+    /* border: solid; */
 }
 

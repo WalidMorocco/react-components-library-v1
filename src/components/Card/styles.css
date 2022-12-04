@@ -1,8 +1,19 @@
 .card-container {
-    border-style: solid;
-    /* margin: 2rem; */
-    padding: 1rem;
-    width: 100%; 
-    display: grid;
     gap: 2rem;
+    height: 100%;
+    padding: 1rem;
+    /* border-style: solid; */
+}
+
+.card {
+    border-style: solid;
+}
+
+.image-container {
+    /* border-style: solid; */
+    
+}
+
+.component-image {
+    width: 100%;
 }

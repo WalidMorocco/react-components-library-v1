@@ -1,16 +1,11 @@
 import './styles.css'
-import { Card } from '../../components/Card/Card'
+import { CardContainer } from '../../components/Card/CardContainer'
 
 export const ComponentSection = () => {
     
     return (
         <div className='card-container'>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-
+            <CardContainer/>
         </div>
     )
 }
