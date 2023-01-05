@@ -5,7 +5,7 @@ export const Card = () => {
     return (
         <div className='card'>
             <div className="image-container">
-                <img src={ContainerImage} className="component-image" />
+                <img src={ContainerImage} className="component-image" alt='component'/>
             </div>
             <div className='description-container'>
                 <h1>PsiDev Navbar Component</h1>

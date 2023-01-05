@@ -12,16 +12,6 @@ body {
     "sidebar2"
 }
 
-@media only screen and (min-width: 500px)  {
-    .wrapper {
-        grid-template-columns: auto 30%;
-        grid-template-areas:
-        "header   header"
-        "content  sidebar"
-        "sidebar2 sidebar2"
-    }
-}
-
 @media only screen and (min-width: 600px)   {
     .wrapper {
     grid-gap: 0.5rem;
@@ -43,7 +33,7 @@ body {
 
 .sidebar {
     grid-area: sidebar;
-    border: solid;
+    /* border: solid; */
 }
 
 .sidebar2 {
