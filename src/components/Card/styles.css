@@ -2,16 +2,15 @@
     gap: 2rem;
     height: 100%;
     padding: 1rem;
-    /* border-style: solid; */
 }
 
 .card {
     border-style: solid;
+    padding: 1rem;
 }
 
 .image-container {
-    /* border-style: solid; */
-    
+    border-style: solid;
 }
 
 .component-image {
